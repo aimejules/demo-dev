@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="odoo_student_tree" model="ir.ui.view">
+      <field name="name">Odoo Student Tree View</field>
+      <field name="model">odoo.student</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="matricule" />
+          <field name="student_class_id" />
+          <field name="date_of_birth" />
+          <field name="sexe" />
+          <field name="state" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="odoo_student_form" model="ir.ui.view">
+      <field name="name">Odoo Student Form View</field>
+      <field name="model">odoo.student</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button name="set_classified" class="oe_highlight" type="object" string="Classified"/>
+            <button name="set_done" class="oe_highlight" type="object" string="Done"/>
+            <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" />
+          </header>
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="matricule" />
+              <field name="student_class_id" />
+              <field name="date_of_birth" />
+              <field name="sexe" />
+              <field name="photo" widget="image"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="odoo_student_action">
+      <field name="name">Student</field>
+      <field name="res_model">odoo.student</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="odoo_student_main_menu"
+      name="Student"
+      web_icon="demo_kasia,static/description/icon.png"
+      />
+
+    <menuitem 
+      id="odoo_student_menu" 
+      name="Student" 
+      parent="odoo_student_main_menu" 
+      action="odoo_student_action" 
+      sequence="1"/>
+     
+  </data>
+</odoo>

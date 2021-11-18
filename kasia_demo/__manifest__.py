@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "kasia_demo",
+    'name': "KASIA DEMO",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Résumé de mon module Odoo spécifique
+
+        """,
 
     'description': """
-        Long description of module's purpose
+        Description détaillée de mon module Odoo spécifique
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "KASIA SARL",
+    'website': "https://kasia.mg",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -20,12 +21,13 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','crm'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
+        'security/ir.model.access.csv',
+        'views/odoo_student_views.xml',
+        'views/odoo_class_views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
