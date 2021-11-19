@@ -25,10 +25,16 @@
 
     # always loaded
     'data': [
+        # security
         'security/ir.model.access.csv',
+        # data
+
+        # views
         'views/odoo_student_views.xml',
         'views/odoo_class_views.xml',
         'views/templates.xml',
+        # wizard
+        'wizard/odoo_popup_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
