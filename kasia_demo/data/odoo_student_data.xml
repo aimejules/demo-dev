@@ -1,0 +1,11 @@
+<odoo>
+	<data>
+
+		<record id="etudiant01" model="odoo.student">
+			<field name="name">Seb</field>
+			<field name="matricule">22</field>
+			<field name="sexe">m</field>
+		</record>
+
+	</data>
+</odoo>

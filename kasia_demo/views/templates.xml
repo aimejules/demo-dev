@@ -1,24 +1,36 @@
 <odoo>
     <data>
-<!--
-        <template id="listing">
-          <ul>
-            <li t-foreach="objects" t-as="object">
-              <a t-attf-href="#{ root }/objects/#{ object.id }">
-                <t t-esc="object.display_name"/>
-              </a>
-            </li>
-          </ul>
+
+        <template id="student_list">
+          <t t-call="website.layout">     
+            <div class="oe_structure">       
+              <div class="container">
+                <br />         
+                <center><h3>Student List</h3></center>  
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Matricule</th>
+                      <th>Class</th>
+                      <th>Date of birth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <t t-foreach="student" t-as="line">
+                    <tr>
+                      <td><span t-field="line.name" /> </td>
+                      <td><span t-field="line.matricule" /> </td>
+                      <td><span t-field="line.student_class_id" /> </td>
+                      <td><span t-field="line.date_of_birth" /> </td>
+                    </tr>
+                  </t>
+                </tbody>
+                </table>
+              </div>
+            </div>
+          </t>
         </template>
-        <template id="object">
-          <h1><t t-esc="object.display_name"/></h1>
-          <dl>
-            <t t-foreach="object._fields" t-as="field">
-              <dt><t t-esc="field"/></dt>
-              <dd><t t-esc="object[field]"/></dd>
-            </t>
-          </dl>
-        </template>
--->
+
     </data>
 </odoo>

@@ -28,10 +28,11 @@
         # security
         'security/ir.model.access.csv',
         # data
-
+        'data/odoo_student_data.xml',
         # views
         'views/odoo_student_views.xml',
         'views/odoo_class_views.xml',
+        'views/res_partner_views.xml',
         'views/res_partner_views.xml',
         'views/templates.xml',
         # wizard
