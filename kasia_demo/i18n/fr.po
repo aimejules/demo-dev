@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* kasia_demo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20201002\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-19 07:01+0000\n"
+"PO-Revision-Date: 2021-11-19 07:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: kasia_demo
+#: model_terms:ir.ui.view,arch_db:kasia_demo.odoo_popup_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: kasia_demo
+#: model:ir.actions.act_window,name:kasia_demo.odoo_class_action
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__student_class_id
+#: model:ir.ui.menu,name:kasia_demo.odoo_class_menu
+msgid "Class"
+msgstr "Classe"
+
+#. module: kasia_demo
+#: model:ir.model,name:kasia_demo.model_odoo_class
+#: model:ir.model,name:kasia_demo.model_odoo_popup
+msgid "Class Management"
+msgstr "Gestion Classe"
+
+#. module: kasia_demo
+#: model:ir.model.fields.selection,name:kasia_demo.selection__odoo_student__state__classified
+#: model_terms:ir.ui.view,arch_db:kasia_demo.odoo_student_form
+msgid "Classified"
+msgstr "Classifié"
+
+#. module: kasia_demo
+#: model:ir.ui.menu,name:kasia_demo.odoo_class_config
+msgid "Configuration"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__create_uid
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__create_uid
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__create_uid
+msgid "Created by"
+msgstr "Crée par"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__create_date
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__create_date
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__create_date
+msgid "Created on"
+msgstr "Crée le"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__date_of_birth
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__display_name
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__display_name
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: kasia_demo
+#: model:ir.model.fields.selection,name:kasia_demo.selection__odoo_student__state__done
+#: model_terms:ir.ui.view,arch_db:kasia_demo.odoo_student_form
+msgid "Done"
+msgstr "Terminé"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__id
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__id
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__id
+msgid "ID"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class____last_update
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup____last_update
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__write_uid
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__write_uid
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__write_date
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__write_date
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__matricule
+msgid "Matricule"
+msgstr "N° matricule"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__name
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__nb_student
+msgid "Nb student"
+msgstr "Nb étudiant"
+
+#. module: kasia_demo
+#: model:ir.model.fields.selection,name:kasia_demo.selection__odoo_student__state__new
+msgid "New"
+msgstr "Nouveau"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_popup__new_date
+msgid "New date"
+msgstr "Nouvelle date"
+
+#. module: kasia_demo
+#: model_terms:ir.ui.view,arch_db:kasia_demo.odoo_student_form
+msgid "Open Wizard"
+msgstr "Ouvrir Wizard"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__photo
+msgid "Photo"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_class__partner_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__sexe
+msgid "Sexe"
+msgstr ""
+
+#. module: kasia_demo
+#: model:ir.model.fields,field_description:kasia_demo.field_odoo_student__state
+msgid "State"
+msgstr "Status"
+
+#. module: kasia_demo
+#: model:ir.actions.act_window,name:kasia_demo.odoo_student_action
+#: model:ir.ui.menu,name:kasia_demo.odoo_student_main_menu
+#: model:ir.ui.menu,name:kasia_demo.odoo_student_menu
+msgid "Student"
+msgstr "Etudiant"
+
+#. module: kasia_demo
+#: model:ir.model,name:kasia_demo.model_odoo_student
+msgid "Student Management System"
+msgstr "Système Gestion Etudiant"
+
+#. module: kasia_demo
+#: model_terms:ir.ui.view,arch_db:kasia_demo.odoo_popup_form
+msgid "Validate"
+msgstr "Valider"
