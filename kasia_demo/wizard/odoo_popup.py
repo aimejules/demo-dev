@@ -11,4 +11,9 @@ class OdooPopup(models.TransientModel):
 
 
     def set_new_date(self):
-        print('odoo live test')
+        active_id = self.env.context.get('active_id')
+        student = self.env['odoo.student'].browse(active_id)
+        student.write({
+            'date_of_birth': self.new_date
+            })
+        print('Acive id =======================================')
