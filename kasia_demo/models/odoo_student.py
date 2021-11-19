@@ -21,3 +21,14 @@ class OdooStudent(models.Model):
     def set_done(self):
         self.state = 'done'
 
+    def open_wizard(self):
+        return {
+            'view_type': 'form',
+            'view_mode': 'form',
+            # 'view_id': self.env.ref('kasia_demo.odoo_popup_form'),
+            'res_model':'odoo.popup',
+            'target': 'new',
+            'type': 'ir.actions.act_window',
+           
+        }
+

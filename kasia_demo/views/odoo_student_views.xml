@@ -25,6 +25,7 @@
           <header>
             <button name="set_classified" class="oe_highlight" type="object" string="Classified"/>
             <button name="set_done" class="oe_highlight" type="object" string="Done"/>
+            <button name="open_wizard" class="oe_highlight" type="object" string="Open Wizard"/>
             <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" />
           </header>
           <sheet>

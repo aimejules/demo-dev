@@ -3,15 +3,15 @@
 
 		<record id="odoo_popup_form" model="ir.ui.view">
 		    <field name="name">Odoo Popup</field>
-		    <field name="model"></field>
+		    <field name="model">odoo.popup</field>
 		    <field name="arch" type="xml">
-		        <form string="">
+		        <form>
 	                <group>
 	                    <field name="new_date"/>
 	                </group>
 	                <footer>
-		        		<button name="set_new_date" type="object" string="Validate"/>
-		        		<button name="cancel" special="cancel" string="Cancel"/>
+		        		<button name="set_new_date" type="object" class="oe_highlight" string="Validate"/>
+		        		<button name="cancel" special="cancel" class="oe_highlight" string="Cancel"/>
 		        	</footer>
 		        </form>
 		    </field>

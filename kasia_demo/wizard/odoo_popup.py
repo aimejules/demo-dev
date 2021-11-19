@@ -8,3 +8,7 @@ class OdooPopup(models.TransientModel):
 
 
     new_date = fields.Date(string='New date')
+
+
+    def set_new_date(self):
+        print('odoo live test')
