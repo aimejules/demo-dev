@@ -32,6 +32,7 @@
         # views
         'views/odoo_student_views.xml',
         'views/odoo_class_views.xml',
+        'views/res_partner_views.xml',
         'views/templates.xml',
         # wizard
         'wizard/odoo_popup_views.xml',

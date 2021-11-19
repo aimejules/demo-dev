@@ -29,6 +29,16 @@
             <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" />
           </header>
           <sheet>
+            <div class="oe_button_box" name="button_box">
+                <button name="open_wizard" type="object" class="oe_stat_button" icon="fa-list" attrs="{'invisible':[('state','=','new')]}">
+                    <div class="o_stat_info">
+                        <field name="matricule" class="o_stat_value"/>
+                        <span class="o_stat_text">Matricule</span>
+                    </div>
+                </button>
+            </div>
+
+
             <group>
               <field name="name" />
               <field name="matricule" />
