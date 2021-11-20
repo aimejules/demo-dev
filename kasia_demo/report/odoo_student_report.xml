@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="action_report_odoo_student"
+                model="odoo.student"
+                string="Impression Badge"
+                name="kasia_demo.report_odoo_student"
+                file="kasia_demo.report_odoo_student"
+                report_type="qweb-pdf"
+                print_report_name="'Badge %s-%s' % (object.name, object.sequence)"
+        />
+
+        <template id="report_odoo_student">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                     <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure">
+                                <h2 class="mt16">
+                                    <span>BADGE </span>
+                                    <span t-field="doc.name"/>
+                                </h2>
+                            </div>
+                            <span t-field="doc.sequence" />
+                             <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', doc.sequence, 200, 200)"/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+    </data>
+</odoo>

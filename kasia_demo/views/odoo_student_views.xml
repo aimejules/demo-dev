@@ -8,6 +8,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
+          <field name="sequence"/>
           <field name="matricule" />
           <field name="student_class_id" />
           <field name="date_of_birth" />
@@ -37,7 +38,11 @@
                     </div>
                 </button>
             </div>
-
+            <div class="oe_title">
+                <h1>
+                    <field name="sequence" readonly="1"/>
+                </h1>
+            </div>
 
             <group>
               <field name="name" />

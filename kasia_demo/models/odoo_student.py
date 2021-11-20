@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class OdooStudent(models.Model):
@@ -14,6 +14,7 @@ class OdooStudent(models.Model):
     sexe = fields.Selection([('m','M'),('f','F')],string='Sexe')
     photo = fields.Image(string='Photo')
     state = fields.Selection([('new','New'),('classified','Classified'),('done','Done')], default='new')
+    sequence = fields.Char(string='Sequence')
 
     def set_classified(self):
         self.state = 'classified'
@@ -32,3 +33,10 @@ class OdooStudent(models.Model):
            
         }
 
+
+    @api.model
+    def create(self, vals):
+        vals.update({
+            'sequence': self.env['ir.sequence'].next_by_code('seq.student')
+            })
+        return super(OdooStudent, self).create(vals)

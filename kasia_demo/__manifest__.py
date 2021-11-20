@@ -29,6 +29,7 @@
         'security/ir.model.access.csv',
         # data
         'data/odoo_student_data.xml',
+        'data/ir_sequence_data.xml',
         # views
         'views/odoo_student_views.xml',
         'views/odoo_class_views.xml',
@@ -37,6 +38,8 @@
         'views/templates.xml',
         # wizard
         'wizard/odoo_popup_views.xml',
+        # report
+        'report/odoo_student_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
